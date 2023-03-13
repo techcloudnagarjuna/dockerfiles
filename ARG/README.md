@@ -4,3 +4,5 @@ ARG is the only instruction you can use before FROM. ARG declared before cant be
 Using ENV and ARG for best results.
 Create one env variable and assign the value of ARG to that.
 Then we can access ARG values through ENV both in image and container.
+
+docker build -t arg:v1 --build-arg VERSION=9 --build-arg GREETING=hello .
