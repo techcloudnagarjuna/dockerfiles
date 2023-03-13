@@ -1,0 +1,66 @@
+<!--
+ Copyright (c) 2014, 2021, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <style>
+    #dataTableDiv_filter{
+      display: none;
+    }
+    
+  table {
+      width: 100%;
+  }
+  th {
+      background: #f1f1f1;
+      font-weight: bold;
+      padding: 6px;
+  }
+  td {
+      background: #f9f9f9;
+      padding: 6px;
+  }
+  </style>
+  <div>
+    <div class="oj-flex oj-lg-12">
+      <div class="oj-flex-item oj-lg-6 oj-lg-padding-3x-end">
+        <oj-input-text id="searchText" value="{{value}}"  label-hint="Enter Value" label-edge="inside"/>
+        </div>  
+        <div class="oj-flex-item oj-lg-6 oj-lg-padding-4x-end oj-lg-padding-1x-top">
+          <oj-button class="bluebuttonCls" id='button1' on-oj-action='[[buttonAction]]'>Search</oj-button>
+        </div>  
+      
+     
+    </div>
+    <div class="oj-flex oj-lg-12">
+      <table id="dataTableDiv" class="display" style="width:100%">
+        <thead>
+            <tr>
+             
+                <th>Doc Title</th>
+                <th>Document Type</th>
+                <th>URL</th>
+               
+            </tr>
+        </thead>
+        
+    </table>
+
+      <oj-list-view id="listview" aria-label="simple list" data="[[dataProvider]]">
+        <template slot="itemTemplate" data-oj-as="item">
+            <li>
+                <oj-list-item-layout>
+                    <span class="oj-typography-body-md oj-text-color-primary"><oj-bind-text value="[[item.data.dDocName]]"></oj-bind-text></span>
+                    
+                    <span slot="secondary" class="oj-typography-body-sm oj-text-color-secondary"><oj-bind-text value="[[item.data.dDocType]]"></oj-bind-text></span>
+                    <span slot="secondary" class="oj-typography-body-sm oj-text-color-secondary"><oj-bind-text value="[[item.data.dDocType]]"></oj-bind-text></span>
+                  </oj-list-item-layout>
+            </li>
+        </template>
+    </oj-list-view>
+
+    </div>
+   
+  </div>
+</div>

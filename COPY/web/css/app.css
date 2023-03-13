@@ -1,0 +1,59 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+
+.sendOffScreen {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.oj-button.oj-default.oj-button-half-chrome .oj-button-icon {
+  color: #005d9c;
+}
+
+.oj-button-jqui.oj-selected.oj-button-outlined-chrome,
+.oj-button.oj-selected.oj-button-outlined-chrome .oj-button-button {
+  color: white;
+  background-color: #005d9c;
+  border-color: rgba(22, 21, 19, 0.3);
+  box-shadow: none;
+  height: 35px;
+}
+
+.oj-buttonset .oj-button-jqui.oj-default.oj-button-outlined-chrome,
+.oj-buttonset .oj-button-jqui.oj-focus-only.oj-button-outlined-chrome,
+.oj-buttonset .oj-button-nocomp.oj-button-outlined-chrome,
+.oj-buttonset .oj-button.oj-default.oj-button-outlined-chrome .oj-button-button,
+.oj-buttonset
+  .oj-button.oj-focus-only.oj-button-outlined-chrome
+  .oj-button-button {
+  background-color: white;
+  height: 35px;
+}
+.bluebuttonCls button.oj-button-button {
+ 
+    color: #ffffff !important;
+    border: 1px solid #005d9c !important;
+    background-color: #005d9c !important;
+  }
+
+  .oj-listview-item {
+    padding: 0.2rem !important;
+    background-image: linear-gradient(#e0e1e1, #e0e1e1);
+    background-position: 0 0;
+    background-color: #f4f3ff !important;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border: 1px solid #cbcccd;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin: 5px;
+  }
