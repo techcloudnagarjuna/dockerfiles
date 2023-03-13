@@ -1,4 +1,4 @@
-FROM alamalinux:8
+FROM alamalinux
 RUN yum install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 COPY web /usr/share/nginx/html/
