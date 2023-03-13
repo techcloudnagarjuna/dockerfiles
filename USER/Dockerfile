@@ -1,4 +1,4 @@
 FROM almalinux
 RUN adduser nginx
-USER nagarjuna
+USER nginx
 RUN touch /tmp/sample.txt
